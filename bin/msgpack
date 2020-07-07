@@ -19,10 +19,10 @@ make
 make install
 
 
-#BUILD_DIR=$1
-#ln -s $BUILD_DIR/.heroku /app/.heroku
-#export PATH=/app/.heroku/php/bin:$PATH
-#bash ./install
+BUILD_DIR=$1
+ln -s $BUILD_DIR/.heroku /app/.heroku
+export PATH=/app/.heroku/php/bin:$PATH
+bash ./install
 
 cd
 echo "important extension msgpack into php.ini"
